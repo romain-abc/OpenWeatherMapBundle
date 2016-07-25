@@ -7,11 +7,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Pyrrah\Tests\OpenWeatherMap;
+namespace Pyrrah\Bundle\OpenWeatherMapBundle;
 
 use PHPUnit_Framework_TestCase;
 
-class ClientTest extends PHPUnit_Framework_TestCase
+class EndroidOpenWeatherMapBundleTest extends PHPUnit_Framework_TestCase
 {
     public function testNoTestsYet()
     {
