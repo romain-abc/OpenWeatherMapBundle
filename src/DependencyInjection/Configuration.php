@@ -22,7 +22,7 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
 
         $treeBuilder
-            ->root('pyrrah_openweathermap')
+            ->root('pyrrah_open_weather_map')
                 ->children()
                     ->scalarNode('api_key')->isRequired()->cannotBeEmpty()->end()
                     ->scalarNode('api_url')->defaultValue(null)->end()
