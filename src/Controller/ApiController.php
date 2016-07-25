@@ -1,7 +1,6 @@
 <?php
 
 /*
- * (c) Jeroen van den Enden <info@endroid.nl>
  * (c) Pierre-Yves Dick <hello@pierreyvesdick.fr>
  *
  * This source file is subject to the MIT license that is bundled

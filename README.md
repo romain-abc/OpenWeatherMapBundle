@@ -2,22 +2,18 @@ Pyrrah OpenWeatherMap
 ======================
 
 This bundle is based on [`OpenWeatherMap`](https://github.com/endroid/OpenWeatherMap) and Endroid [`OpenWeatherMapBundle`](https://github.com/endroid/OpenWeatherMapBundle).
-In priority, please refer to this sources.
-NB: I created a simplification of these two packages. My final goal is to create a project using Guzzle.
-
 
 OpenWeatherMap helps making requests to the OpenWeatherMap API, without having to bother too much about passing your API
 key and building requests. The only thing you need is the API key (APPID) which you can find after [registration on the
 website](http://openweathermap.org/login).
 
-More info about custom parameters in the official API docs: http://bugs.openweathermap.org/projects/api/wiki/Api_2_5
+Official API docs: http://bugs.openweathermap.org/projects/api/wiki/Api_2_5
 
 
 ## Requirements
 
 * Symfony
 * Dependencies:
- * [`Buzz`](https://github.com/kriswallsmith/Buzz)
  * [`Guzzle`](https://github.com/guzzlehttp/guzzle)
 
 ## Installation
