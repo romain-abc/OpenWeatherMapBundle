@@ -38,7 +38,7 @@ class ApiController extends Controller
         $parameters['mode'] = $format;
 
         /** @var Client $client */
-        $client = $this->get('endroid.openweathermap.client');
+        $client = $this->get('pyrrah.openweathermap.client');
         $response = $client->query($name, $parameters);
 
         return new Response($response->getContent(), $response->getStatusCode(), array('Content-Type' => $response->getHeader('Content-Type')));
