@@ -7,7 +7,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Pyrrah\Bundle\OpenWeatherMap\DependencyInjection;
+namespace Pyrrah\Bundle\OpenWeatherMapBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

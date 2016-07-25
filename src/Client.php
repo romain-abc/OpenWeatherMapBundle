@@ -7,7 +7,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Pyrrah\OpenWeatherMap;
+namespace Pyrrah\Bundle\OpenWeatherMapBundle;
 
 use GuzzleHttp\Client as GuzzleClient;
 use stdClass;
