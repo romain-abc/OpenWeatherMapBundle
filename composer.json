@@ -2,7 +2,7 @@
     "name": "pyrrah/openweathermap-bundle",
     "description": "Pyrrah OpenWeatherMap Bundle for Symfony",
     "keywords": ["pyrrah", "openweathermap", "open", "weather", "map", "symfony", "bundle"],
-    "homepage": "https://github.com/pyrrah/PyrrahOpenWeatherMapBundle",
+    "homepage": "https://github.com/pyrrah/OpenWeatherMapBundle",
     "type": "library",
     "license": "MIT",
     "authors": [
