@@ -7,7 +7,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Pyrrah\Tests\OpenWeatherMap;
+namespace Pyrrah\Bundle\OpenWeatherMapBundle;
 
 use PHPUnit_Framework_TestCase;
 

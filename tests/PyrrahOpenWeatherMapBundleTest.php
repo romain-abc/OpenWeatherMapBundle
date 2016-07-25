@@ -11,7 +11,7 @@ namespace Pyrrah\Bundle\OpenWeatherMapBundle;
 
 use PHPUnit_Framework_TestCase;
 
-class EndroidOpenWeatherMapBundleTest extends PHPUnit_Framework_TestCase
+class PyrrahOpenWeatherMapBundleTest extends PHPUnit_Framework_TestCase
 {
     public function testNoTestsYet()
     {
