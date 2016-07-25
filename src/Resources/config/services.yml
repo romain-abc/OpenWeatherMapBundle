@@ -1,0 +1,3 @@
+services:
+    endroid.openweathermap.client:
+        class: Pyrrah\OpenWeatherMap\Client
