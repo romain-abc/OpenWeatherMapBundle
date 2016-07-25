@@ -6,7 +6,6 @@ In priority, please refer to this sources.
 
 NB: I created a simplification of these two packages. My final goal is to create a project using Guzzle.
 
-```
 
 OpenWeatherMap helps making requests to the OpenWeatherMap API, without having to bother too much about passing your API
 key and building requests. The only thing you need is the API key (APPID) which you can find after [registration on the
