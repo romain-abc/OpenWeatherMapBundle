@@ -8,8 +8,8 @@
     "authors": [
         {
             "name": "Pierre-Yves Dick",
-            "email": "hello@pierreyvesdick.fr",
-            "homepage": "http://www.pierreyvesdick.fr"
+            "email": "contact@pyrrah.eu",
+            "homepage": "http://www.pyrrah.eu"
         }
     ],
     "require": {
@@ -26,7 +26,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "dev-master": "1.0.1-dev"
         }
     }
 }
