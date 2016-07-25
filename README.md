@@ -3,7 +3,6 @@ Pyrrah OpenWeatherMap
 
 This bundle is based on [`OpenWeatherMap`](https://github.com/endroid/OpenWeatherMap) and Endroid [`OpenWeatherMapBundle`](https://github.com/endroid/OpenWeatherMapBundle).
 In priority, please refer to this sources.
-
 NB: I created a simplification of these two packages. My final goal is to create a project using Guzzle.
 
 
