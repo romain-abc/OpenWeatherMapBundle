@@ -1,7 +1,7 @@
 {
     "name": "pyrrah/openweathermap-bundle",
     "description": "Pyrrah OpenWeatherMap Bundle for Symfony",
-    "keywords": ["endroid", "openweathermap", "open", "weather", "map", "symfony", "bundle"],
+    "keywords": ["pyrrah", "openweathermap", "open", "weather", "map", "symfony", "bundle"],
     "homepage": "https://github.com/pyrrah/PyrrahOpenWeatherMapBundle",
     "type": "library",
     "license": "MIT",
