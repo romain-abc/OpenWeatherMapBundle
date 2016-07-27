@@ -85,7 +85,7 @@ After installation and configuration, the service can be directly referenced fro
 ```php
 <?php
 
-use Pyrrah\OpenWeatherMap\Client;
+use Pyrrah\OpenWeatherMapBundle\Services\Client;
 
 /** @var Client $client */
 $client = $this->get('pyrrah.openweathermap.client');
