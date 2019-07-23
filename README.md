@@ -5,14 +5,14 @@ This bundle is based on [`OpenWeatherMap`](https://github.com/endroid/OpenWeathe
 
 OpenWeatherMap helps making requests to the OpenWeatherMap API, without having to bother too much about passing your API
 key and building requests. The only thing you need is the API key (APPID) which you can find after [registration on the
-website](http://openweathermap.org/login).
+website](https://home.openweathermap.org/users/sign_up).
 
-Official API docs: http://bugs.openweathermap.org/projects/api/wiki/Api_2_5
+Official API docs: https://openweathermap.org/api
 
 
 ## Requirements
 
-* Symfony
+* Symfony 2 or 3
 * Dependencies:
  * [`Guzzle`](https://github.com/guzzlehttp/guzzle)
 
