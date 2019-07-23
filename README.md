@@ -14,7 +14,7 @@ Official API docs: https://openweathermap.org/api
 
 * Symfony 2 or 3
 * Dependencies:
- * [`Guzzle`](https://github.com/guzzlehttp/guzzle)
+ * [`Guzzle`](https://github.com/guzzle/guzzle/)
 
 ## Installation
 
