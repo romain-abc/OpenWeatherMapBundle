@@ -1,5 +1,9 @@
-Pyrrah OpenWeatherMap
-======================
+Pyrrah OpenWeatherMap 🌞
+========================
+
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Software License][ico-license]](LICENSE)
+[![Total Downloads][ico-downloads]][link-downloads]
 
 This bundle is based on [`OpenWeatherMap`](https://github.com/endroid/OpenWeatherMap) and Endroid [`OpenWeatherMapBundle`](https://github.com/endroid/OpenWeatherMapBundle).
 
@@ -99,7 +103,21 @@ $weather = json_decode($response->getContent());
 
 ```
 
+## Credits
+
+- [Pierre-Yves Dick][link-author]
+- [All Contributors][link-contributors]
+
 ## License
 
 This bundle is under the MIT license. For the full copyright and license
-information please view the LICENSE file that was distributed with this source code.
+information please view the [License File](LICENSE) that was distributed with this source code.
+
+[ico-version]: https://img.shields.io/packagist/v/pyrrah/openweathermap-bundle.svg?style=flat-square
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/pyrrah/openweathermap-bundle.svg?style=flat-square
+
+[link-packagist]: https://packagist.org/packages/pyrrah/openweathermap-bundle
+[link-downloads]: https://packagist.org/packages/pyrrah/openweathermap-bundle
+[link-author]: https://github.com/Pyrrah
+[link-contributors]: ../../contributors
