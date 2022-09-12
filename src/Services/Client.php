@@ -10,7 +10,7 @@ class Client
     /**
      * @var string
      */
-    protected $apiUrl = 'http://api.openweathermap.org/data/2.5/';
+    protected $apiUrl = 'https://api.openweathermap.org/data/2.5/';
 
     /**
      * @var string
