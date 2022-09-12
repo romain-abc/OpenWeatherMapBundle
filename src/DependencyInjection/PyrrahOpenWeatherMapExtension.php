@@ -1,6 +1,6 @@
 <?php
 
-namespace Pyrrah\Bundle\OpenWeatherMapBundle\DependencyInjection;
+namespace Pyrrah\OpenWeatherMapBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Processor;
 use Symfony\Component\Config\FileLocator;
