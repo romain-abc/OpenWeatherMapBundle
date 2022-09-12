@@ -1,10 +1,10 @@
 <?php
 
-namespace Pyrrah\OpenWeatherMapBundle;
+namespace Pyrrah\OpenWeatherMapBundle\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class ClientTest extends PHPUnit_Framework_TestCase
+class PyrrahOpenWeatherMapBundleTest extends TestCase
 {
     public function testNoTestsYet()
     {
