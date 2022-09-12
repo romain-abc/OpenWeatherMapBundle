@@ -41,7 +41,7 @@ Routing (optional)
 
 If you don't want to expose the OpenWeatherMap API via your application, you can skip this section.
 
-## Configuration
+### Configuration
 
 ``` yml
 PyrrahOpenWeatherMapBundle:
