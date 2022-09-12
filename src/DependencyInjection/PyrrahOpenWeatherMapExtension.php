@@ -2,22 +2,23 @@
 
 namespace Pyrrah\Bundle\OpenWeatherMapBundle\DependencyInjection;
 
-use Symfony\Component\HttpKernel\DependencyInjection\Extension;
-use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\Config\Definition\Processor;
 use Symfony\Component\Config\FileLocator;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
+use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 class PyrrahOpenWeatherMapExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
-        $configuration = new Configuration();
-        $config = $this->processConfiguration($configuration, $configs);
-
-        $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader = new YamlFileLoader($container, new FileLocator(array(__DIR__.'/../Resources/config')));
         $loader->load('services.yml');
 
-        $serviceDefinition = $container->getDefinition('pyrrah.openweathermap.client');
-        $serviceDefinition->setArguments(array($config['api_key'], $config['api_url'], $config['units'], $config['language']));
+        $configuration = new Configuration();
+        $processor = new Processor();
+        $config = $processor->process($configuration->getConfigTreeBuilder()->buildTree(), $configs);
+
+        $container->getDefinition('pyrrah.openweathermap.client')->addArgument($config);
     }
 }
