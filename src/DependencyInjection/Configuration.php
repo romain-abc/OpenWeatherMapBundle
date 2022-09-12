@@ -22,7 +22,7 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
                 ->children()
-                    ->scalarNode('api_key')->defaultValue('element_to_define')->end()
+                    ->scalarNode('api_key')->defaultValue('your_api_key')->end()
                     ->scalarNode('api_url')->defaultValue('http://api.openweathermap.org/data/2.5/')->end()
                     ->scalarNode('units')->defaultValue('metric')->end()
                     ->scalarNode('language')->defaultValue('en')->end()
