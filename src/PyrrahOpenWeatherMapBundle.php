@@ -2,8 +2,8 @@
 
 namespace Pyrrah\Bundle\OpenWeatherMapBundle;
 
-use Symfony\Component\HttpKernel\Bundle\Bundle as BaseBundle;
+use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class PyrrahOpenWeatherMapBundle extends BaseBundle
+class PyrrahOpenWeatherMapBundle extends Bundle
 {
 }
