@@ -7,8 +7,6 @@ Pyrrah OpenWeatherMap 🌞
 
 This bundle allows you to easily get the weather for a city or a location, via the OpenWeatherMap service.
 
-*Source based on [`OpenWeatherMap`](https://github.com/endroid/OpenWeatherMap) and Endroid [`OpenWeatherMapBundle`](https://github.com/endroid/OpenWeatherMapBundle), today deprecated. This new version is compatible with Symfony 5 to 6.*
-
 Requirements
 ------------
 
@@ -16,7 +14,7 @@ Requirements
 * API Key (APPID) from [OpenWeatherMap](https://home.openweathermap.org/users/sign_up)*²*
 * Dependencies: [`Guzzle`](https://packagist.org/packages/guzzlehttp/guzzle)
 
-*²Please note that the free version of OpenWeatherMap restricts the number of calls per month (see [documentation] (https://openweathermap.org/price)). For a large number of calls, I recommend to setting up a cache (not currently managed in this package).*
+*²Please note that the free version of OpenWeatherMap restricts the number of calls per month (see [documentation](https://openweathermap.org/price)). For a large number of calls, I recommend to setting up a cache (not currently managed in this package).*
 
 Installation
 ------------
@@ -27,7 +25,7 @@ Installation
   composer require pyrrah/openweathermap-bundle
   ```
 
-  2. Check configuration file is correctly installed, and edit the default values ​​with yours ([Official API docs](https://openweathermap.org/api)) :
+  2. Check configuration file is correctly installed, and edit the default values with yours ([Official API docs](https://openweathermap.org/api)) :
 
   ```yaml
     # config/packages/pyrrah_openweathermap.yaml
@@ -47,7 +45,7 @@ If you don't want to expose the OpenWeatherMap API via your application, you can
 
 ``` yml
 PyrrahOpenWeatherMapBundle:
-    resource:	"@PyrrahOpenWeatherMapBundle/Controller/"
+    resource:		"@PyrrahOpenWeatherMapBundle/Controller/"
     type:		annotation
     prefix:		/openweathermap/api
 ```
