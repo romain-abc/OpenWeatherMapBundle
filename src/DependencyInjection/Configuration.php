@@ -23,9 +23,9 @@ class Configuration implements ConfigurationInterface
         $rootNode
                 ->children()
                     ->scalarNode('api_key')->isRequired()->cannotBeEmpty()->end()
-                    ->scalarNode('api_url')->defaultValue(null)->end()
-                    ->scalarNode('units')->defaultValue(null)->end()
-                    ->scalarNode('language')->defaultValue(null)->end()
+                    ->scalarNode('api_url')->defaultValue('http://api.openweathermap.org/data/2.5/')->end()
+                    ->scalarNode('units')->defaultValue('metric')->end()
+                    ->scalarNode('language')->defaultValue('en')->end()
                 ->end();
 
         return $treeBuilder;
