@@ -13,7 +13,7 @@ Requirements
 ------------
 
 * Symfony 5 or 6
-* API Key (APPID) from [OpenWeatherMap] (https://home.openweathermap.org/users/sign_up)
+* API Key (APPID) from [OpenWeatherMap](https://home.openweathermap.org/users/sign_up)
 * Dependencies: [`Guzzle`](https://packagist.org/packages/guzzlehttp/guzzle)
 
 *Please note that the free version of OpenWeatherMap restricts the number of calls per month (see [documentation] (https://openweathermap.org/price)). For a large number of calls, I recommend to setting up a cache (not currently managed in this package).*
