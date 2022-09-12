@@ -3,6 +3,7 @@ Pyrrah/OpenWeatherMap 🌞
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE)
+[![Total Contributors][ico-contributors]][link-contributors]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 This bundle allows you to easily get the weather for a city or a location, via the OpenWeatherMap service.
@@ -90,6 +91,7 @@ information please view the [License File](LICENSE) that was distributed with th
 
 [ico-version]: https://img.shields.io/packagist/v/pyrrah/openweathermap-bundle.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-contributors]: https://img.shields.io/github/contributors/Pyrrah/OpenWeatherMapBundle?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/pyrrah/openweathermap-bundle.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/pyrrah/openweathermap-bundle
