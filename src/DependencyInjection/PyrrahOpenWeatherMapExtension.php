@@ -1,6 +1,6 @@
 <?php
 
-namespace Pyrrah\OpenWeatherMapBundle\DependencyInjection;
+namespace Pyrrah\Bundle\OpenWeatherMapBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;

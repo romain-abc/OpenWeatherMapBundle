@@ -1,6 +1,6 @@
 <?php
 
-namespace Pyrrah\OpenWeatherMapBundle\Tests;
+namespace Pyrrah\Bundle\OpenWeatherMapBundle\Tests;
 
 use PHPUnit\Framework\TestCase;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Pyrrah\OpenWeatherMapBundle\DependencyInjection;
+namespace Pyrrah\Bundle\OpenWeatherMapBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

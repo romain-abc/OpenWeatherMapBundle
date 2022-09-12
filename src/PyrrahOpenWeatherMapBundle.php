@@ -1,6 +1,6 @@
 <?php
 
-namespace Pyrrah\OpenWeatherMapBundle;
+namespace Pyrrah\Bundle\OpenWeatherMapBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle as BaseBundle;
 
