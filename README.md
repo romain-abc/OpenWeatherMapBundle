@@ -7,16 +7,16 @@ Pyrrah OpenWeatherMap 🌞
 
 This bundle allows you to easily get the weather for a city or a location, via the OpenWeatherMap service.
 
-Source based on [`OpenWeatherMap`](https://github.com/endroid/OpenWeatherMap) and Endroid [`OpenWeatherMapBundle`](https://github.com/endroid/OpenWeatherMapBundle), today deprecated. This new version is compatible with Symfony 5 to 6.
+*Source based on [`OpenWeatherMap`](https://github.com/endroid/OpenWeatherMap) and Endroid [`OpenWeatherMapBundle`](https://github.com/endroid/OpenWeatherMapBundle), today deprecated. This new version is compatible with Symfony 5 to 6.*
 
 Requirements
 ------------
 
 * Symfony 5 or 6
-* API Key (APPID) from [OpenWeatherMap](https://home.openweathermap.org/users/sign_up)
+* API Key (APPID) from [OpenWeatherMap](https://home.openweathermap.org/users/sign_up)*²*
 * Dependencies: [`Guzzle`](https://packagist.org/packages/guzzlehttp/guzzle)
 
-*Please note that the free version of OpenWeatherMap restricts the number of calls per month (see [documentation] (https://openweathermap.org/price)). For a large number of calls, I recommend to setting up a cache (not currently managed in this package).*
+*²Please note that the free version of OpenWeatherMap restricts the number of calls per month (see [documentation] (https://openweathermap.org/price)). For a large number of calls, I recommend to setting up a cache (not currently managed in this package).*
 
 Installation
 ------------
