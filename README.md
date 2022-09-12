@@ -1,4 +1,4 @@
-Pyrrah OpenWeatherMap 🌞
+Pyrrah/OpenWeatherMap 🌞
 ========================
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
@@ -14,7 +14,7 @@ Requirements
 * API Key (APPID) from [OpenWeatherMap](https://home.openweathermap.org/users/sign_up)*²*
 * Dependencies: [`Guzzle`](https://packagist.org/packages/guzzlehttp/guzzle)
 
-*²Please note that the free version of OpenWeatherMap restricts the number of calls per month (see [documentation](https://openweathermap.org/price)). For a large number of calls, I recommend to setting up a cache (not currently managed in this package).*
+*²Please note that the free version of OpenWeatherMap restricts the number of calls per month. Please see [documentation](https://openweathermap.org/price)). For a large number of calls, I recommend to setting up a cache (not currently managed in this package).*
 
 Installation
 ------------
