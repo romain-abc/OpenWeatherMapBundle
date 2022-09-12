@@ -1,15 +1,8 @@
 <?php
 
-/*
- * (c) Pierre-Yves Dick <hello@pierreyvesdick.fr>
- *
- * This source file is subject to the MIT license that is bundled
- * with this source code in the file LICENSE.
- */
+namespace Pyrrah\OpenWeatherMapBundle\Controller;
 
-namespace Pyrrah\Bundle\OpenWeatherMapBundle\Controller;
-
-use Pyrrah\OpenWeatherMapBundle\Client;
+use Pyrrah\OpenWeatherMapBundle\Services\Client;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;

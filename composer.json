@@ -1,32 +1,36 @@
 {
     "name": "pyrrah/openweathermap-bundle",
-    "description": "Pyrrah OpenWeatherMap Bundle for Symfony",
-    "keywords": ["pyrrah", "openweathermap", "open", "weather", "map", "symfony", "bundle"],
-    "homepage": "https://github.com/pyrrah/OpenWeatherMapBundle",
-    "type": "library",
+    "description": "The simple way to obtain currently weather from OpenWeatherMap API, for Symfony 5 to 6.",
+    "homepage": "https://github.com/Pyrrah/OpenWeatherMapBundle",
+    "keywords": ["pyrrah", "openweathermap", "open", "weather", "map", "weathermap", "weathermap symfony5", "weathermap symfony6"],
+    "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
         {
             "name": "Pierre-Yves Dick",
             "email": "hello@pierreyvesdick.fr",
-            "homepage": "http://www.pierreyvesdick.fr"
+            "homepage": "https://github.com/Pyrrah"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.0",
-        "guzzlehttp/guzzle": "^5.0|^6.0"
+        "php": ">=7.2.5",
+        "guzzlehttp/guzzle": "^7.5"
     },
     "autoload": {
-        "psr-4": {
-            "Pyrrah\\Bundle\\OpenWeatherMapBundle\\": [ "src/", "tests/" ]
-        }
+        "psr-4": { "Pyrrah\\OpenWeatherMapBundle\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Pyrrah\\OpenWeatherMapBundle\\Tests\\": "tests/" }
     },
     "config": {
-        "bin-dir": "bin"
+        "preferred-install": {
+            "*": "dist"
+        }
     },
     "extra": {
         "branch-alias": {
-            "dev-main": "1.x-dev"
+            "dev-main": "v1.1.x-dev"
         }
     }
 }

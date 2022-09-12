@@ -1,17 +1,10 @@
 <?php
 
-/*
- * (c) Pierre-Yves Dick <hello@pierreyvesdick.fr>
- *
- * This source file is subject to the MIT license that is bundled
- * with this source code in the file LICENSE.
- */
+namespace Pyrrah\OpenWeatherMapBundle\Tests;
 
-namespace Pyrrah\Bundle\OpenWeatherMapBundle;
+use PHPUnit\Framework\TestCase;
 
-use PHPUnit_Framework_TestCase;
-
-class ClientTest extends PHPUnit_Framework_TestCase
+class PyrrahOpenWeatherMapBundleTest extends TestCase
 {
     public function testNoTestsYet()
     {

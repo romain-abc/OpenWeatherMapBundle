@@ -1,13 +1,6 @@
 <?php
 
-/*
- * (c) Pierre-Yves Dick <hello@pierreyvesdick.fr>
- *
- * This source file is subject to the MIT license that is bundled
- * with this source code in the file LICENSE.
- */
-
-namespace Pyrrah\Bundle\OpenWeatherMapBundle\DependencyInjection;
+namespace Pyrrah\OpenWeatherMapBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -15,21 +8,25 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 class Configuration implements ConfigurationInterface
 {
     /**
-     * {@inheritdoc}
+     * @return TreeBuilder
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
+        $treeBuilder = new TreeBuilder('pyrrah_open_weather_map');
 
-        $treeBuilder
-            ->root('pyrrah_open_weather_map')
+        if (method_exists($treeBuilder, 'getRootNode')) {
+            $rootNode = $treeBuilder->getRootNode();
+        } else {
+            $rootNode = $treeBuilder->root('pyrrah_open_weather_map');
+        }
+
+        $rootNode
                 ->children()
-                    ->scalarNode('api_key')->isRequired()->cannotBeEmpty()->end()
-                    ->scalarNode('api_url')->defaultValue(null)->end()
-                    ->scalarNode('units')->defaultValue(null)->end()
-                    ->scalarNode('language')->defaultValue(null)->end()
-                ->end()
-        ;
+                    ->scalarNode('api_key')->defaultValue('your_api_key')->end()
+                    ->scalarNode('api_url')->defaultValue('https://api.openweathermap.org/data/2.5/')->end()
+                    ->scalarNode('units')->defaultValue('metric')->end()
+                    ->scalarNode('language')->defaultValue('en')->end()
+                ->end();
 
         return $treeBuilder;
     }

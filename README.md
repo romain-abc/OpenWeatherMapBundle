@@ -5,71 +5,45 @@ Pyrrah OpenWeatherMap 🌞
 [![Software License][ico-license]](LICENSE)
 [![Total Downloads][ico-downloads]][link-downloads]
 
-This bundle is based on [`OpenWeatherMap`](https://github.com/endroid/OpenWeatherMap) and Endroid [`OpenWeatherMapBundle`](https://github.com/endroid/OpenWeatherMapBundle).
+This bundle allows you to easily get the weather for a city or a location, via the OpenWeatherMap service.
 
-OpenWeatherMap helps making requests to the OpenWeatherMap API, without having to bother too much about passing your API
-key and building requests. The only thing you need is the API key (APPID) which you can find after [registration on the
-website](https://home.openweathermap.org/users/sign_up).
+*Source based on [`OpenWeatherMap`](https://github.com/endroid/OpenWeatherMap) and Endroid [`OpenWeatherMapBundle`](https://github.com/endroid/OpenWeatherMapBundle), today deprecated. This new version is compatible with Symfony 5 to 6.*
 
-Official API docs: https://openweathermap.org/api
+Requirements
+------------
 
+* Symfony 5 or 6
+* API Key (APPID) from [OpenWeatherMap](https://home.openweathermap.org/users/sign_up)*²*
+* Dependencies: [`Guzzle`](https://packagist.org/packages/guzzlehttp/guzzle)
 
-## Requirements
+*²Please note that the free version of OpenWeatherMap restricts the number of calls per month (see [documentation] (https://openweathermap.org/price)). For a large number of calls, I recommend to setting up a cache (not currently managed in this package).*
 
-* Symfony 2 or 3
-* Dependencies:
- * [`Guzzle`](https://github.com/guzzle/guzzle/)
+Installation
+------------
 
-## Installation
+  1. To install this bundle, run the following [Composer](https://getcomposer.org/) command :
 
-### Add in your composer.json
+  ```
+  composer require pyrrah/openweathermap-bundle
+  ```
 
-```js
-{
-    "require": {
-        "pyrrah/openweathermap-bundle": "dev-master"
-    }
-}
-```
+  2. Check configuration file is correctly installed, and edit the default values ​​with yours ([Official API docs](https://openweathermap.org/api)) :
 
-### Install the bundle
+  ```yaml
+    # config/packages/pyrrah_openweathermap.yaml
+    pyrrah_openweathermap:
+        api_key: your_api_key
+        api_url: https://api.openweathermap.org/data/2.5/
+        units: metric
+        language: en
+  ```
 
-``` bash
-$ curl -s http://getcomposer.org/installer | php
-$ php composer.phar update pyrrah/openweathermap-bundle
-```
-
-Composer will install the bundle to your project's `vendor/endroid` directory.
-
-### Enable the bundle via the kernel
-
-``` php
-<?php
-// app/AppKernel.php
-
-public function registerBundles()
-{
-    $bundles = array(
-        // ...
-        new Pyrrah\Bundle\OpenWeatherMapBundle\PyrrahOpenWeatherMapBundle(),
-    );
-}
-```
-
-## Configuration
-
-### config.yml
-
-```yaml
-pyrrah_openweathermap:
-    api_key: your_api_key
-    api_url:
-    units: ... // optional
-```
-
-## Routing
+Routing (optional)
+------------------
 
 If you don't want to expose the OpenWeatherMap API via your application, you can skip this section.
+
+## Configuration
 
 ``` yml
 PyrrahOpenWeatherMapBundle:
@@ -82,7 +56,8 @@ This exposes the OpenWeatherMap API via <yourdomain>/openweathermap/api. This me
 http://api.openweathermap.org/ you can now send an unsigned request to <yourdomain>/openweathermap/api/*. Make sure you
 secure this area if you don't want others to be able to post on your behalf.
 
-## Usage
+Usage
+-----
 
 After installation and configuration, the service can be directly referenced from within your controllers.
 
@@ -103,12 +78,14 @@ $weather = json_decode($response->getContent());
 
 ```
 
-## Credits
+Credits
+-------
 
 - [Pierre-Yves Dick][link-author]
 - [All Contributors][link-contributors]
 
-## License
+License
+-------
 
 This bundle is under the MIT license. For the full copyright and license
 information please view the [License File](LICENSE) that was distributed with this source code.
