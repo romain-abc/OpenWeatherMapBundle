@@ -1,8 +1,8 @@
 <?php
 
-namespace Pyrrah\Bundle\OpenWeatherMapBundle\Controller;
+namespace Pyrrah\OpenWeatherMapBundle\Controller;
 
-use Pyrrah\OpenWeatherMapBundle\Client;
+use Pyrrah\OpenWeatherMapBundle\Services\Client;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;

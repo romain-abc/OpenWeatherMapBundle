@@ -1,6 +1,6 @@
 <?php
 
-namespace Pyrrah\Bundle\OpenWeatherMapBundle\Services;
+namespace Pyrrah\OpenWeatherMapBundle\Services;
 
 use GuzzleHttp\Client as GuzzleClient;
 use stdClass;

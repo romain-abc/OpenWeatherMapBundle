@@ -18,10 +18,10 @@
         "guzzlehttp/guzzle": "^7.5"
     },
     "autoload": {
-        "psr-4": { "Pyrrah\\Bundle\\OpenWeatherMapBundle\\": "src/" }
+        "psr-4": { "Pyrrah\\OpenWeatherMapBundle\\": "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "Pyrrah\\Bundle\\OpenWeatherMapBundle\\Tests\\": "tests/" }
+        "psr-4": { "Pyrrah\\OpenWeatherMapBundle\\Tests\\": "tests/" }
     },
     "config": {
         "preferred-install": {
