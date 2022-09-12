@@ -1,13 +1,6 @@
 <?php
 
-/*
- * (c) Pierre-Yves Dick <hello@pierreyvesdick.fr>
- *
- * This source file is subject to the MIT license that is bundled
- * with this source code in the file LICENSE.
- */
-
-namespace Pyrrah\Bundle\OpenWeatherMapBundle\Services;
+namespace Pyrrah\OpenWeatherMapBundle\Services;
 
 use GuzzleHttp\Client as GuzzleClient;
 use stdClass;
