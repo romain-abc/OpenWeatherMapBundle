@@ -10,7 +10,7 @@ class Configuration implements ConfigurationInterface
     /**
      * @return TreeBuilder
      */
-    public function getConfigTreeBuilder():TreeBuilder
+    public function getConfigTreeBuilder(): TreeBuilder
     {
         $treeBuilder = new TreeBuilder('pyrrah_open_weather_map');
 
